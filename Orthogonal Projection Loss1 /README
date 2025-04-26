@@ -1,0 +1,4 @@
+This fole contain the followimg tasks:
+1.  Replace the Prototype-Involved Contrastive Loss with Orthogonal
+Projection Loss1 and compare the model performance across all datasets.
+2. Perform experiments without incorporating Prototype-Involved Contrastive Loss (PIC) and evaluate the accuracy on the CIFAR-100
