@@ -1,0 +1,3 @@
+Ths file contain the code for changing the backbone to RESNET 32 from RESNET -18
+
+Bonus tip: it contian different backbones available, choose accordingly based on your requirements 
