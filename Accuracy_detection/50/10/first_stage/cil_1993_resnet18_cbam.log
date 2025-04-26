@@ -1,0 +1,182 @@
+2025-04-04 18:27:36,363 [trainer.py] => config: ./exps/fcs/cifar100/5/first_stage.json
+2025-04-04 18:27:36,363 [trainer.py] => prefix: cil
+2025-04-04 18:27:36,363 [trainer.py] => dataset: cifar100
+2025-04-04 18:27:36,363 [trainer.py] => memory_size: 0
+2025-04-04 18:27:36,363 [trainer.py] => shuffle: True
+2025-04-04 18:27:36,363 [trainer.py] => init_cls: 50
+2025-04-04 18:27:36,363 [trainer.py] => increment: 10
+2025-04-04 18:27:36,363 [trainer.py] => model_name: fcs
+2025-04-04 18:27:36,363 [trainer.py] => convnet_type: resnet18_cbam
+2025-04-04 18:27:36,363 [trainer.py] => device: [device(type='cuda', index=0)]
+2025-04-04 18:27:36,363 [trainer.py] => seed: 1993
+2025-04-04 18:27:36,363 [trainer.py] => lambda_fkd: 10
+2025-04-04 18:27:36,363 [trainer.py] => ckpt_num: 0
+2025-04-04 18:27:36,363 [trainer.py] => ckpt_path: 
+2025-04-04 18:27:36,363 [trainer.py] => contrast_T: 0.07
+2025-04-04 18:27:36,363 [trainer.py] => lambda_contrast: 0.1
+2025-04-04 18:27:36,363 [trainer.py] => lambda_proto: 10
+2025-04-04 18:27:36,363 [trainer.py] => lambda_transfer: 1
+2025-04-04 18:27:36,363 [trainer.py] => temp: 0.1
+2025-04-04 18:27:36,363 [trainer.py] => epochs: 101
+2025-04-04 18:27:36,363 [trainer.py] => lr: 0.001
+2025-04-04 18:27:36,363 [trainer.py] => batch_size: 64
+2025-04-04 18:27:36,363 [trainer.py] => weight_decay: 0.0002
+2025-04-04 18:27:36,363 [trainer.py] => step_size: 45
+2025-04-04 18:27:36,363 [trainer.py] => gamma: 0.1
+2025-04-04 18:27:36,363 [trainer.py] => num_workers: 8
+2025-04-04 18:27:36,363 [trainer.py] => is_task0: True
+2025-04-04 18:27:36,363 [trainer.py] => log_dir: logs
+2025-04-04 18:27:36,363 [trainer.py] => log_name: first_stage
+2025-04-04 18:27:38,097 [data_manager.py] => [68, 56, 78, 8, 23, 84, 90, 65, 74, 76, 40, 89, 3, 92, 55, 9, 26, 80, 43, 38, 58, 70, 77, 1, 85, 19, 17, 50, 28, 53, 13, 81, 45, 82, 6, 59, 83, 16, 15, 44, 91, 41, 72, 60, 79, 52, 20, 10, 31, 54, 37, 95, 14, 71, 96, 98, 97, 2, 64, 66, 42, 22, 35, 86, 24, 34, 87, 21, 99, 0, 88, 27, 18, 94, 11, 12, 47, 25, 30, 46, 62, 69, 36, 61, 7, 63, 75, 5, 32, 4, 51, 48, 73, 93, 39, 67, 29, 49, 57, 33]
+2025-04-04 18:27:38,530 [trainer.py] => All params: 11519312
+2025-04-04 18:27:38,530 [trainer.py] => Trainable params: 11519312
+2025-04-04 18:27:38,540 [fcs.py] => Learning on 0-50
+2025-04-04 18:27:38,541 [fcs.py] => All params: 12250337
+2025-04-04 18:27:38,541 [fcs.py] => Trainable params: 12250337
+2025-04-04 18:28:06,662 [fcs.py] => Task 0, Epoch 1/101 => Loss 8.134, Loss_clf 7.525, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.609, Train_accy 1.06, Test_accy 12.44
+2025-04-04 18:28:33,499 [fcs.py] => Task 0, Epoch 2/101 => Loss 6.362, Loss_clf 5.803, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.559, Train_accy 5.03
+2025-04-04 18:28:58,658 [fcs.py] => Task 0, Epoch 3/101 => Loss 5.777, Loss_clf 5.264, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.514, Train_accy 8.56
+2025-04-04 18:29:26,754 [fcs.py] => Task 0, Epoch 4/101 => Loss 5.352, Loss_clf 4.866, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.485, Train_accy 11.80
+2025-04-04 18:29:52,497 [fcs.py] => Task 0, Epoch 5/101 => Loss 4.937, Loss_clf 4.480, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.457, Train_accy 15.59
+2025-04-04 18:30:21,421 [fcs.py] => Task 0, Epoch 6/101 => Loss 4.595, Loss_clf 4.162, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.433, Train_accy 19.18, Test_accy 49.34
+2025-04-04 18:30:47,691 [fcs.py] => Task 0, Epoch 7/101 => Loss 4.339, Loss_clf 3.924, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.415, Train_accy 21.91
+2025-04-06 10:03:36,874 [trainer.py] => config: ./exps/fcs/cifar100/5/first_stage.json
+2025-04-06 10:03:36,891 [trainer.py] => prefix: cil
+2025-04-06 10:03:36,891 [trainer.py] => dataset: cifar100
+2025-04-06 10:03:36,891 [trainer.py] => memory_size: 0
+2025-04-06 10:03:36,891 [trainer.py] => shuffle: True
+2025-04-06 10:03:36,891 [trainer.py] => init_cls: 50
+2025-04-06 10:03:36,891 [trainer.py] => increment: 10
+2025-04-06 10:03:36,891 [trainer.py] => model_name: fcs
+2025-04-06 10:03:36,891 [trainer.py] => convnet_type: resnet18_cbam
+2025-04-06 10:03:36,891 [trainer.py] => device: [device(type='cuda', index=0)]
+2025-04-06 10:03:36,891 [trainer.py] => seed: 1993
+2025-04-06 10:03:36,891 [trainer.py] => lambda_fkd: 10
+2025-04-06 10:03:36,891 [trainer.py] => ckpt_num: 0
+2025-04-06 10:03:36,891 [trainer.py] => ckpt_path: 
+2025-04-06 10:03:36,891 [trainer.py] => contrast_T: 0.07
+2025-04-06 10:03:36,891 [trainer.py] => lambda_contrast: 0.1
+2025-04-06 10:03:36,891 [trainer.py] => lambda_proto: 10
+2025-04-06 10:03:36,891 [trainer.py] => lambda_transfer: 1
+2025-04-06 10:03:36,891 [trainer.py] => temp: 0.1
+2025-04-06 10:03:36,891 [trainer.py] => epochs: 101
+2025-04-06 10:03:36,891 [trainer.py] => lr: 0.001
+2025-04-06 10:03:36,891 [trainer.py] => batch_size: 64
+2025-04-06 10:03:36,891 [trainer.py] => weight_decay: 0.0002
+2025-04-06 10:03:36,891 [trainer.py] => step_size: 45
+2025-04-06 10:03:36,891 [trainer.py] => gamma: 0.1
+2025-04-06 10:03:36,891 [trainer.py] => num_workers: 8
+2025-04-06 10:03:36,891 [trainer.py] => is_task0: True
+2025-04-06 10:03:36,891 [trainer.py] => log_dir: logs
+2025-04-06 10:03:36,891 [trainer.py] => log_name: first_stage
+2025-04-06 10:03:38,470 [data_manager.py] => [68, 56, 78, 8, 23, 84, 90, 65, 74, 76, 40, 89, 3, 92, 55, 9, 26, 80, 43, 38, 58, 70, 77, 1, 85, 19, 17, 50, 28, 53, 13, 81, 45, 82, 6, 59, 83, 16, 15, 44, 91, 41, 72, 60, 79, 52, 20, 10, 31, 54, 37, 95, 14, 71, 96, 98, 97, 2, 64, 66, 42, 22, 35, 86, 24, 34, 87, 21, 99, 0, 88, 27, 18, 94, 11, 12, 47, 25, 30, 46, 62, 69, 36, 61, 7, 63, 75, 5, 32, 4, 51, 48, 73, 93, 39, 67, 29, 49, 57, 33]
+2025-04-06 10:03:38,704 [trainer.py] => All params: 11519312
+2025-04-06 10:03:38,704 [trainer.py] => Trainable params: 11519312
+2025-04-06 10:03:38,710 [fcs.py] => Learning on 0-50
+2025-04-06 10:03:38,711 [fcs.py] => All params: 12250337
+2025-04-06 10:03:38,711 [fcs.py] => Trainable params: 12250337
+2025-04-06 10:03:56,448 [fcs.py] => Task 0, Epoch 1/101 => Loss 8.134, Loss_clf 7.525, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.609, Train_accy 1.06, Test_accy 12.44
+2025-04-06 10:04:11,602 [fcs.py] => Task 0, Epoch 2/101 => Loss 6.362, Loss_clf 5.803, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.559, Train_accy 5.03
+2025-04-06 10:04:27,058 [fcs.py] => Task 0, Epoch 3/101 => Loss 5.777, Loss_clf 5.264, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.514, Train_accy 8.56
+2025-04-06 10:04:42,040 [fcs.py] => Task 0, Epoch 4/101 => Loss 5.352, Loss_clf 4.866, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.485, Train_accy 11.80
+2025-04-06 10:04:56,774 [fcs.py] => Task 0, Epoch 5/101 => Loss 4.937, Loss_clf 4.480, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.457, Train_accy 15.59
+2025-04-06 10:05:12,063 [fcs.py] => Task 0, Epoch 6/101 => Loss 4.595, Loss_clf 4.162, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.433, Train_accy 19.18, Test_accy 49.34
+2025-04-06 10:05:27,030 [fcs.py] => Task 0, Epoch 7/101 => Loss 4.339, Loss_clf 3.924, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.415, Train_accy 21.91
+2025-04-06 10:05:41,827 [fcs.py] => Task 0, Epoch 8/101 => Loss 4.127, Loss_clf 3.725, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.402, Train_accy 24.81
+2025-04-06 10:05:56,746 [fcs.py] => Task 0, Epoch 9/101 => Loss 3.949, Loss_clf 3.553, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.396, Train_accy 26.79
+2025-04-06 10:06:11,516 [fcs.py] => Task 0, Epoch 10/101 => Loss 3.810, Loss_clf 3.415, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.395, Train_accy 28.75
+2025-04-06 10:06:26,739 [fcs.py] => Task 0, Epoch 11/101 => Loss 3.681, Loss_clf 3.297, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.384, Train_accy 30.37, Test_accy 63.52
+2025-04-06 10:06:42,068 [fcs.py] => Task 0, Epoch 12/101 => Loss 3.579, Loss_clf 3.201, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.378, Train_accy 31.90
+2025-04-06 10:06:56,867 [fcs.py] => Task 0, Epoch 13/101 => Loss 3.476, Loss_clf 3.105, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.371, Train_accy 32.99
+2025-04-06 10:07:11,588 [fcs.py] => Task 0, Epoch 14/101 => Loss 3.408, Loss_clf 3.039, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.368, Train_accy 34.08
+2025-04-06 10:07:27,271 [fcs.py] => Task 0, Epoch 15/101 => Loss 3.326, Loss_clf 2.961, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.365, Train_accy 35.18
+2025-04-06 10:07:43,432 [fcs.py] => Task 0, Epoch 16/101 => Loss 3.270, Loss_clf 2.907, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.363, Train_accy 36.02, Test_accy 68.24
+2025-04-06 10:07:59,153 [fcs.py] => Task 0, Epoch 17/101 => Loss 3.237, Loss_clf 2.872, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.366, Train_accy 36.54
+2025-04-06 10:08:14,672 [fcs.py] => Task 0, Epoch 18/101 => Loss 3.167, Loss_clf 2.807, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.360, Train_accy 37.57
+2025-04-06 10:08:29,732 [fcs.py] => Task 0, Epoch 19/101 => Loss 3.118, Loss_clf 2.759, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.358, Train_accy 38.43
+2025-04-06 10:08:44,809 [fcs.py] => Task 0, Epoch 20/101 => Loss 3.054, Loss_clf 2.697, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.356, Train_accy 39.33
+2025-04-06 10:09:00,243 [fcs.py] => Task 0, Epoch 21/101 => Loss 3.030, Loss_clf 2.675, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.355, Train_accy 39.67, Test_accy 72.36
+2025-04-06 10:09:15,563 [fcs.py] => Task 0, Epoch 22/101 => Loss 3.000, Loss_clf 2.647, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.354, Train_accy 40.19
+2025-04-06 10:09:30,733 [fcs.py] => Task 0, Epoch 23/101 => Loss 2.965, Loss_clf 2.611, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.354, Train_accy 40.79
+2025-04-06 10:09:45,796 [fcs.py] => Task 0, Epoch 24/101 => Loss 2.977, Loss_clf 2.620, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.357, Train_accy 40.71
+2025-04-06 10:10:00,907 [fcs.py] => Task 0, Epoch 25/101 => Loss 2.924, Loss_clf 2.570, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.354, Train_accy 41.46
+2025-04-06 10:10:16,182 [fcs.py] => Task 0, Epoch 26/101 => Loss 2.882, Loss_clf 2.530, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.351, Train_accy 42.10, Test_accy 74.50
+2025-04-06 10:10:31,379 [fcs.py] => Task 0, Epoch 27/101 => Loss 2.849, Loss_clf 2.501, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.348, Train_accy 42.50
+2025-04-06 10:10:46,639 [fcs.py] => Task 0, Epoch 28/101 => Loss 2.822, Loss_clf 2.471, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.351, Train_accy 43.05
+2025-04-06 10:11:02,006 [fcs.py] => Task 0, Epoch 29/101 => Loss 2.808, Loss_clf 2.461, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.347, Train_accy 43.38
+2025-04-06 10:11:16,784 [fcs.py] => Task 0, Epoch 30/101 => Loss 2.796, Loss_clf 2.448, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.349, Train_accy 43.52
+2025-04-06 10:11:32,584 [fcs.py] => Task 0, Epoch 31/101 => Loss 2.757, Loss_clf 2.410, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.348, Train_accy 44.06, Test_accy 73.48
+2025-04-06 10:11:47,903 [fcs.py] => Task 0, Epoch 32/101 => Loss 2.748, Loss_clf 2.400, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.348, Train_accy 44.31
+2025-04-06 10:12:02,814 [fcs.py] => Task 0, Epoch 33/101 => Loss 2.734, Loss_clf 2.385, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.349, Train_accy 44.56
+2025-04-06 10:12:17,852 [fcs.py] => Task 0, Epoch 34/101 => Loss 2.711, Loss_clf 2.361, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.350, Train_accy 45.05
+2025-04-06 10:12:33,577 [fcs.py] => Task 0, Epoch 35/101 => Loss 2.700, Loss_clf 2.355, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.345, Train_accy 45.05
+2025-04-06 10:12:49,508 [fcs.py] => Task 0, Epoch 36/101 => Loss 2.679, Loss_clf 2.333, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.346, Train_accy 45.37, Test_accy 74.62
+2025-04-06 10:13:05,125 [fcs.py] => Task 0, Epoch 37/101 => Loss 2.666, Loss_clf 2.320, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.347, Train_accy 45.71
+2025-04-06 10:13:20,748 [fcs.py] => Task 0, Epoch 38/101 => Loss 2.656, Loss_clf 2.308, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.348, Train_accy 45.80
+2025-04-06 10:13:36,375 [fcs.py] => Task 0, Epoch 39/101 => Loss 2.629, Loss_clf 2.285, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.344, Train_accy 46.20
+2025-04-06 10:13:51,524 [fcs.py] => Task 0, Epoch 40/101 => Loss 2.631, Loss_clf 2.283, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.348, Train_accy 46.44
+2025-04-06 10:14:07,194 [fcs.py] => Task 0, Epoch 41/101 => Loss 2.612, Loss_clf 2.268, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.344, Train_accy 46.84, Test_accy 76.52
+2025-04-06 10:14:22,465 [fcs.py] => Task 0, Epoch 42/101 => Loss 2.599, Loss_clf 2.253, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.346, Train_accy 46.89
+2025-04-06 10:14:37,721 [fcs.py] => Task 0, Epoch 43/101 => Loss 2.590, Loss_clf 2.244, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.345, Train_accy 46.97
+2025-04-06 10:14:52,644 [fcs.py] => Task 0, Epoch 44/101 => Loss 2.583, Loss_clf 2.238, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.345, Train_accy 47.25
+2025-04-06 10:15:08,007 [fcs.py] => Task 0, Epoch 45/101 => Loss 2.566, Loss_clf 2.223, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.343, Train_accy 47.42
+2025-04-06 10:15:23,474 [fcs.py] => Task 0, Epoch 46/101 => Loss 2.223, Loss_clf 1.889, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.333, Train_accy 54.28, Test_accy 81.32
+2025-04-06 10:15:38,314 [fcs.py] => Task 0, Epoch 47/101 => Loss 2.095, Loss_clf 1.765, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.330, Train_accy 56.63
+2025-04-06 10:15:53,175 [fcs.py] => Task 0, Epoch 48/101 => Loss 2.049, Loss_clf 1.720, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.329, Train_accy 57.63
+2025-04-06 10:16:08,229 [fcs.py] => Task 0, Epoch 49/101 => Loss 2.019, Loss_clf 1.690, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.329, Train_accy 58.26
+2025-04-06 10:16:23,068 [fcs.py] => Task 0, Epoch 50/101 => Loss 1.986, Loss_clf 1.660, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.325, Train_accy 58.82
+2025-04-06 10:16:38,460 [fcs.py] => Task 0, Epoch 51/101 => Loss 1.965, Loss_clf 1.638, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.327, Train_accy 59.35, Test_accy 82.52
+2025-04-06 10:16:54,105 [fcs.py] => Task 0, Epoch 52/101 => Loss 1.946, Loss_clf 1.619, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.327, Train_accy 59.67
+2025-04-06 10:17:09,606 [fcs.py] => Task 0, Epoch 53/101 => Loss 1.926, Loss_clf 1.601, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.325, Train_accy 60.12
+2025-04-06 10:17:24,863 [fcs.py] => Task 0, Epoch 54/101 => Loss 1.905, Loss_clf 1.581, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.324, Train_accy 60.50
+2025-04-06 10:17:40,274 [fcs.py] => Task 0, Epoch 55/101 => Loss 1.895, Loss_clf 1.571, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.324, Train_accy 60.80
+2025-04-06 10:17:55,649 [fcs.py] => Task 0, Epoch 56/101 => Loss 1.877, Loss_clf 1.552, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.325, Train_accy 61.20, Test_accy 82.68
+2025-04-06 10:18:10,936 [fcs.py] => Task 0, Epoch 57/101 => Loss 1.871, Loss_clf 1.546, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.325, Train_accy 61.42
+2025-04-06 10:18:26,163 [fcs.py] => Task 0, Epoch 58/101 => Loss 1.843, Loss_clf 1.518, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.324, Train_accy 61.94
+2025-04-06 10:18:41,064 [fcs.py] => Task 0, Epoch 59/101 => Loss 1.841, Loss_clf 1.517, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.324, Train_accy 61.96
+2025-04-06 10:18:56,029 [fcs.py] => Task 0, Epoch 60/101 => Loss 1.819, Loss_clf 1.496, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.323, Train_accy 62.39
+2025-04-06 10:19:11,398 [fcs.py] => Task 0, Epoch 61/101 => Loss 1.808, Loss_clf 1.485, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.323, Train_accy 62.71, Test_accy 83.18
+2025-04-06 10:19:26,351 [fcs.py] => Task 0, Epoch 62/101 => Loss 1.798, Loss_clf 1.475, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.323, Train_accy 62.89
+2025-04-06 10:19:41,484 [fcs.py] => Task 0, Epoch 63/101 => Loss 1.788, Loss_clf 1.464, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.323, Train_accy 63.03
+2025-04-06 10:19:56,378 [fcs.py] => Task 0, Epoch 64/101 => Loss 1.777, Loss_clf 1.454, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.322, Train_accy 63.30
+2025-04-06 10:20:11,226 [fcs.py] => Task 0, Epoch 65/101 => Loss 1.766, Loss_clf 1.441, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.324, Train_accy 63.73
+2025-04-06 10:20:26,522 [fcs.py] => Task 0, Epoch 66/101 => Loss 1.759, Loss_clf 1.438, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.321, Train_accy 63.74, Test_accy 83.26
+2025-04-06 10:20:41,344 [fcs.py] => Task 0, Epoch 67/101 => Loss 1.751, Loss_clf 1.429, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.322, Train_accy 63.95
+2025-04-06 10:20:56,629 [fcs.py] => Task 0, Epoch 68/101 => Loss 1.739, Loss_clf 1.416, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.323, Train_accy 64.40
+2025-04-06 10:21:11,804 [fcs.py] => Task 0, Epoch 69/101 => Loss 1.732, Loss_clf 1.410, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.322, Train_accy 64.43
+2025-04-06 10:21:27,014 [fcs.py] => Task 0, Epoch 70/101 => Loss 1.728, Loss_clf 1.404, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.323, Train_accy 64.49
+2025-04-06 10:21:42,542 [fcs.py] => Task 0, Epoch 71/101 => Loss 1.719, Loss_clf 1.396, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.323, Train_accy 64.66, Test_accy 83.78
+2025-04-06 10:21:57,936 [fcs.py] => Task 0, Epoch 72/101 => Loss 1.710, Loss_clf 1.389, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.322, Train_accy 64.92
+2025-04-06 10:22:13,340 [fcs.py] => Task 0, Epoch 73/101 => Loss 1.697, Loss_clf 1.375, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.322, Train_accy 65.14
+2025-04-06 10:22:28,483 [fcs.py] => Task 0, Epoch 74/101 => Loss 1.691, Loss_clf 1.370, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.321, Train_accy 65.24
+2025-04-06 10:22:43,843 [fcs.py] => Task 0, Epoch 75/101 => Loss 1.686, Loss_clf 1.364, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.322, Train_accy 65.45
+2025-04-06 10:22:59,265 [fcs.py] => Task 0, Epoch 76/101 => Loss 1.679, Loss_clf 1.356, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.323, Train_accy 65.57, Test_accy 83.28
+2025-04-06 10:23:14,057 [fcs.py] => Task 0, Epoch 77/101 => Loss 1.681, Loss_clf 1.359, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.323, Train_accy 65.64
+2025-04-06 10:23:28,765 [fcs.py] => Task 0, Epoch 78/101 => Loss 1.665, Loss_clf 1.343, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.322, Train_accy 66.03
+2025-04-06 10:23:43,522 [fcs.py] => Task 0, Epoch 79/101 => Loss 1.655, Loss_clf 1.334, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.321, Train_accy 66.04
+2025-04-06 10:23:59,023 [fcs.py] => Task 0, Epoch 80/101 => Loss 1.647, Loss_clf 1.327, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.320, Train_accy 66.32
+2025-04-06 10:24:14,438 [fcs.py] => Task 0, Epoch 81/101 => Loss 1.647, Loss_clf 1.326, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.321, Train_accy 66.33, Test_accy 83.98
+2025-04-06 10:24:29,205 [fcs.py] => Task 0, Epoch 82/101 => Loss 1.644, Loss_clf 1.322, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.322, Train_accy 66.38
+2025-04-06 10:24:44,703 [fcs.py] => Task 0, Epoch 83/101 => Loss 1.635, Loss_clf 1.312, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.322, Train_accy 66.73
+2025-04-06 10:24:59,738 [fcs.py] => Task 0, Epoch 84/101 => Loss 1.625, Loss_clf 1.304, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.321, Train_accy 66.85
+2025-04-06 10:25:14,849 [fcs.py] => Task 0, Epoch 85/101 => Loss 1.622, Loss_clf 1.300, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.322, Train_accy 66.82
+2025-04-06 10:25:30,636 [fcs.py] => Task 0, Epoch 86/101 => Loss 1.618, Loss_clf 1.295, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.322, Train_accy 67.14, Test_accy 83.48
+2025-04-06 10:25:46,138 [fcs.py] => Task 0, Epoch 87/101 => Loss 1.613, Loss_clf 1.291, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.321, Train_accy 67.20
+2025-04-06 10:26:00,977 [fcs.py] => Task 0, Epoch 88/101 => Loss 1.611, Loss_clf 1.289, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.322, Train_accy 67.27
+2025-04-06 10:26:16,162 [fcs.py] => Task 0, Epoch 89/101 => Loss 1.604, Loss_clf 1.283, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.322, Train_accy 67.39
+2025-04-06 10:26:30,941 [fcs.py] => Task 0, Epoch 90/101 => Loss 1.601, Loss_clf 1.279, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.322, Train_accy 67.41
+2025-04-06 10:26:46,234 [fcs.py] => Task 0, Epoch 91/101 => Loss 1.545, Loss_clf 1.225, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.320, Train_accy 68.90, Test_accy 83.46
+2025-04-06 10:27:01,795 [fcs.py] => Task 0, Epoch 92/101 => Loss 1.524, Loss_clf 1.203, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.321, Train_accy 69.21
+2025-04-06 10:27:16,582 [fcs.py] => Task 0, Epoch 93/101 => Loss 1.512, Loss_clf 1.193, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.319, Train_accy 69.65
+2025-04-06 10:27:31,322 [fcs.py] => Task 0, Epoch 94/101 => Loss 1.507, Loss_clf 1.188, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.319, Train_accy 69.75
+2025-04-06 10:27:46,266 [fcs.py] => Task 0, Epoch 95/101 => Loss 1.506, Loss_clf 1.188, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.319, Train_accy 69.79
+2025-04-06 10:28:01,504 [fcs.py] => Task 0, Epoch 96/101 => Loss 1.499, Loss_clf 1.180, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.319, Train_accy 69.99, Test_accy 83.84
+2025-04-06 10:28:16,317 [fcs.py] => Task 0, Epoch 97/101 => Loss 1.501, Loss_clf 1.181, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.320, Train_accy 70.12
+2025-04-06 10:28:31,103 [fcs.py] => Task 0, Epoch 98/101 => Loss 1.494, Loss_clf 1.175, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.319, Train_accy 70.11
+2025-04-06 10:28:45,852 [fcs.py] => Task 0, Epoch 99/101 => Loss 1.498, Loss_clf 1.180, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.319, Train_accy 70.08
+2025-04-06 10:29:00,585 [fcs.py] => Task 0, Epoch 100/101 => Loss 1.491, Loss_clf 1.173, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.318, Train_accy 70.24
+2025-04-06 10:29:15,885 [fcs.py] => Task 0, Epoch 101/101 => Loss 1.490, Loss_clf 1.172, Loss_fkd 0.000, Loss_proto 0.000, Loss_transfer 0.000, Loss_contrast 0.318, Train_accy 70.10, Test_accy 83.84
+2025-04-06 10:29:26,466 [trainer.py] => CNN: {'total': 83.84, '00-09': 86.2, '10-19': 78.7, '20-29': 87.3, '30-39': 82.2, '40-49': 84.8, 'old': 0, 'new': 83.84}
+2025-04-06 10:29:26,466 [trainer.py] => NME: {'total': 81.7, '00-09': 82.9, '10-19': 75.6, '20-29': 84.4, '30-39': 80.8, '40-49': 84.8, 'old': 0, 'new': 81.7}
+2025-04-06 10:29:26,466 [trainer.py] => CNN top1 curve: [83.84]
+2025-04-06 10:29:26,466 [trainer.py] => CNN top5 curve: [97.4]
